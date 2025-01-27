@@ -22,3 +22,20 @@ chrome.runtime.onMessage.addListener(
 			});
 	   	}
 	});
+	
+	// Existing code for randomizing keystrokes remains untouched
+
+// Heartbeat Monitoring
+function startHeartbeat() {
+  setInterval(() => {
+    chrome.runtime.sendMessage({ type: "heartbeat" }, (response) => {
+      if (chrome.runtime.lastError) {
+        console.error("Extension heartbeat failed:", chrome.runtime.lastError);
+      } else if (response && response.status !== "ok") {
+        console.warn("Extension is not running properly.");
+      }
+    });
+  }, 10000); // Every 10 seconds
+}
+
+startHeartbeat();
