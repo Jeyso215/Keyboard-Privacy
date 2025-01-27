@@ -1,4 +1,4 @@
-# Keyboard-Privacy
+# Keyboard Privacy
 
 Keyboard Privacy is a web project focused on enhancing user privacy by obfuscating the timing of keystrokes. This project aims to provide a secure and private browsing experience by mitigating the risks associated with keystroke timing attacks.
 
