@@ -3,8 +3,8 @@
       "service_worker": "js/background.js",
       "scripts": [ "js/background.js", "js/popup.js" ]
    },
-   "host_permissions": ["<all_urls>"],
-   "browser_action": {
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "action": {
       "default_icon": "icons/icon_safe.png",
       "default_popup": "popup.html",
       "icons": [ "icons/icon_safe.png" ],
