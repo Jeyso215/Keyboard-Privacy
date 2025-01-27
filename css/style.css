@@ -1,0 +1,588 @@
+.dwelltime {
+	width: 40px;
+}
+
+.gaptime {
+	width: 40px;
+}
+
+.aos.aos,
+.aos div,
+.aos span,
+.aos applet,
+.aos object,
+.aos iframe,
+.aos h1,
+.aos h2,
+.aos h3,
+.aos h4,
+.aos h5,
+.aos h6,
+.aos p,
+.aos blockquote,
+.aos pre,
+.aos a,
+.aos abbr,
+.aos acronym,
+.aos address,
+.aos big,
+.aos cite,
+.aos code,
+.aos del,
+.aos dfn,
+.aos em,
+.aos img,
+.aos ins,
+.aos kbd,
+.aos q,
+.aos s,
+.aos samp,
+.aos small,
+.aos strike,
+.aos strong,
+.aos sub,
+.aos sup,
+.aos tt,
+.aos var,
+.aos b,
+.aos u,
+.aos i,
+.aos center,
+.aos dl,
+.aos dt,
+.aos dd,
+.aos ol,
+.aos ul,
+.aos li,
+.aos fieldset,
+.aos form,
+.aos label,
+.aos legend,
+.aos table,
+.aos caption,
+.aos tbody,
+.aos tfoot,
+.aos thead,
+.aos tr,
+.aos th,
+.aos td,
+.aos article,
+.aos aside,
+.aos canvas,
+.aos details,
+.aos embed,
+.aos figure,
+.aos figcaption,
+.aos footer,
+.aos header,
+.aos hgroup,
+.aos menu,
+.aos nav,
+.aos output,
+.aos ruby,
+.aos section,
+.aos summary,
+.aos time,
+.aos mark,
+.aos audio,
+.aos video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    background: transparent
+}
+.aos article,
+.aos aside,
+.aos details,
+.aos figcaption,
+.aos figure,
+.aos footer,
+.aos header,
+.aos hgroup,
+.aos menu,
+.aos nav,
+.aos section {
+    display: block
+}
+.aos body {
+    line-height: 1
+}
+.aos ol,
+.aos ul {
+    list-style: none
+}
+.aos blockquote,
+.aos q {
+    quotes: none
+}
+.aos blockquote:before,
+.aos blockquote:after,
+.aos q:before,
+.aos q:after {
+    content: none
+}
+.aos table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.aos .clear {
+    content: '';
+    display: table;
+    visibility: hidden;
+    clear: both
+}
+.aos .inner {
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto
+}
+.aos .inner-2 {
+    width: 90%;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto
+}
+.aos .rotate-270 {
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+.aos .rotate-0 {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+.aos .gradient-horizontal {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%)
+}
+.aos .vertical-center {
+    position: relative;
+    top: 50%;
+    -wbkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.aos.aos-body,
+.aos.aos-injected,
+.aos .aos-body,
+.aos .aos-injected {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #282828
+}
+.aos.aos-body *,
+.aos.aos-injected *,
+.aos .aos-body *,
+.aos .aos-injected *,
+.aos.aos-body *:before,
+.aos.aos-injected *:before,
+.aos .aos-body *:before,
+.aos .aos-injected *:before,
+.aos.aos-body *:after,
+.aos.aos-injected *:after,
+.aos .aos-body *:after,
+.aos .aos-injected *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.aos.aos-body strong,
+.aos.aos-injected strong,
+.aos .aos-body strong,
+.aos .aos-injected strong {
+    font-weight: bold
+}
+.aos.aos-body a,
+.aos.aos-injected a,
+.aos .aos-body a,
+.aos .aos-injected a {
+    color: #359fb9
+}
+.aos.aos-body a:hover,
+.aos.aos-injected a:hover,
+.aos .aos-body a:hover,
+.aos .aos-injected a:hover {
+    color: #026c86
+}
+.aos.aos-body .aos-scroll,
+.aos.aos-injected .aos-scroll,
+.aos .aos-body .aos-scroll,
+.aos .aos-injected .aos-scroll {
+    overflow: auto;
+    margin: 80px 0 115px
+}
+.aos.aos-body,
+.aos .aos-body {
+    width: 400px;
+    height: 150px;
+    padding: 80px 0 100px
+}
+.aos.aos-body.aos-body-dnt,
+.aos .aos-body.aos-body-dnt {
+    padding-bottom: 90px
+}
+.aos .aos-i {
+    position: relative;
+    padding-left: 24px
+}
+.aos .aos-i:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 18px;
+    width: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+.aos .aos-i-right {
+    padding-left: inherit;
+    padding-right: 24px
+}
+.aos .aos-i-right:before {
+    left: auto;
+    right: 0
+}
+.aos .aos-i-modal {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    margin: .5em auto;
+    position: relative;
+    display: block;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100px;
+    border: solid 2px #fff
+}
+.aos .aos-section-attention .aos-i-modal,
+.aos .aos-i-modal-black {
+    border-color: #282828
+}
+.aos .aos-i-absolute {
+    position: absolute
+}
+.aos .aos-i-open:before {
+    background-image: url("../icons/eye_open.png")
+}
+.aos .aos-i-closed:before {
+    background-image: url("../icons/eye_closed.png")
+}
+.aos .aos-i-arrow-right:before {
+    background-image: url("../icons/arrow-right.png")
+}
+.aos .aos-text>p,
+.aos .aos-text-p {
+    line-height: 1.4;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    color: inherit
+}
+.aos .aos-text-p-large {
+    font-size: 15px;
+    line-height: 1.4
+}
+.aos .aos-text>h1,
+.aos .aos-text-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: inherit
+}
+.aos .aos-text>h2,
+.aos .aos-text-h2 {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: inherit
+}
+.aos .aos-text>h2.aos-text-h2-grey,
+.aos .aos-text-h2-grey {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 13px;
+    padding-top: .2em;
+    padding-bottom: .4em
+}
+.aos .aos-text>h3,
+.aos .aos-text-h3 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-top: .2em;
+    padding-bottom: .4em;
+    color: inherit
+}
+.aos .aos-text>h4,
+.aos .aos-text-h4 {
+    line-height: 1.4;
+    padding-top: .2em;
+    padding-bottom: .4em;
+    color: inherit
+}
+.aos .aos-text-bold {
+    font-weight: bold
+}
+.aos .aos-text-nobold {
+    font-weight: normal
+}
+.aos .aos-text-ok {
+    color: #41a653
+}
+.aos .aos-text-error {
+    color: #b03131
+}
+.aos .aos-text-attention {
+    color: #dfbf3d
+}
+.aos .aos-text-grey {
+    color: #808080
+}
+.aos .aos-text-left {
+    text-align: left
+}
+.aos .aos-text-center {
+    text-align: center
+}
+.aos a.aos-button,
+.aos .aos-button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #808080;
+    border-radius: 3px;
+    border: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 20px
+}
+.aos a.aos-button:hover,
+.aos .aos-button:hover {
+    background-color: #5e5e5e;
+    color: #fff
+}
+.aos .aos-button-icon {
+    padding-left: 60px
+}
+.aos .aos-button-icon-right {
+    padding-right: 60px
+}
+.aos a.aos-button-ok,
+.aos .aos-button-ok {
+    background-color: #4bbf60;
+    text-transform: uppercase
+}
+.aos a.aos-button-ok:before,
+.aos .aos-button-ok:before,
+.aos a.aos-button-ok:hover,
+.aos .aos-button-ok:hover {
+    background-color: #41a653
+}
+.aos a.aos-button-error,
+.aos .aos-button-error {
+    background-color: #c93838;
+    text-transform: uppercase
+}
+.aos a.aos-button-error:before,
+.aos .aos-button-error:before,
+.aos a.aos-button-error:hover,
+.aos .aos-button-error:hover {
+    background-color: #b03131
+}
+.aos a.aos-button-primary,
+.aos .aos-button-primary {
+    background-color: #359fb9
+}
+.aos a.aos-button-primary:before,
+.aos .aos-button-primary:before,
+.aos a.aos-button-primary:hover,
+.aos .aos-button-primary:hover {
+    background-color: #137d97
+}
+.aos .aos-accordeon {
+    text-align: left;
+    margin: 10px -15px
+}
+.aos .aos-accordeon-title {
+    padding: 5px 0 5px 24px;
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto
+}
+.aos .aos-accordeon-title:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../icons/accordeon.png") no-repeat center center;
+    background-size: 80%;
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+.aos .aos-accordeon-title:hover {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%)
+}
+.aos .aos-accordeon-title.aos-show:before {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+.aos .aos-accordeon-title.aos-show+.aos-accordeon-pane {
+    display: block
+}
+.aos .aos-accordeon-pane {
+    background-color: #f2f2f2;
+    border: solid 1px #dbdbdb;
+    border-style: solid none;
+    display: none
+}
+.aos .aos-accordeon-pane-inner {
+    position: relative;
+    padding: 6px 0;
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto
+}
+.aos .aos-accordeon-pane-inner:after,
+.aos .aos-accordeon-pane-inner:before {
+    bottom: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none
+}
+.aos .aos-accordeon-pane-inner:after {
+    border-color: transparent;
+    border-bottom-color: #f2f2f2;
+    border-width: 5px
+}
+.aos .aos-accordeon-pane-inner:before {
+    border-color: transparent;
+    border-bottom-color: #dbdbdb;
+    border-width: 6px;
+    margin-left: -1px
+}
+.aos .aos-accordeon-list p:hover {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0) 100%)
+}
+.aos .aos-header {
+    background-color: #a5abb2;
+    height: 50px;
+    padding-left: 0;
+    border-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999
+}
+.aos .aos-header:before {
+    width: 80px;
+    background-color: #959ba2;
+    background-size: 50%
+}
+.aos .aos-header h1 {
+    position: relative;
+    top: 50%;
+    -wbkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 20px 0 100px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: #fff
+}
+.aos .aos-header-ok {
+    background-color: #4bbf60
+}
+.aos .aos-header-ok:before {
+    background-color: #41a653
+}
+.aos .aos-header-error {
+    background-color: #c93838
+}
+.aos .aos-header-error:before {
+    background-color: #b03131
+}
+.aos .aos-header-attention {
+    background-color: #ecd047
+}
+.aos .aos-header-attention:before {
+    background-color: #dfbf3d
+}
+.aos .aos-header-attention h1 {
+    color: #282828
+}
+.aos .aos-section {
+    text-align: center;
+    background-color: #fff
+}
+.aos .aos-section-full {
+    padding-left: 0;
+    padding-right: 0
+}
+.aos .aos-section-grey {
+    background-color: #f2f2f2
+}
+.aos .aos-section-error {
+    background-color: #c93838;
+    color: #fff
+}
+.aos .aos-section-ok {
+    background-color: #4bbf60;
+    color: #fff
+}
+.aos .aos-settings {
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 99999
+}
+.aos .aos-result-website {
+    display: block;
+    color: #808080;
+    font-weight: normal
+}
