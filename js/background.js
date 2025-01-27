@@ -53,3 +53,12 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 			});
 		}
 	});
+	
+	// Heartbeat Monitoring 
+// Ensure the background script handles heartbeat messages properly:
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "heartbeat") {
+    console.log(`Heartbeat received from tab ${sender.tab ? sender.tab.id : "unknown"}`);
+    sendResponse({ status: "ok" });
+  }
+});
