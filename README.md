@@ -58,3 +58,9 @@ This project is licensed under the GNU Affero General Public License v3.0. See t
 ## Contact
 
 For any questions or inquiries, please contact the repository owner at [Jeyso215](https://github.com/Jeyso215)
+
+## Credits
+
+- Jeyso215 - For reverse engineering the code and releasing the source code / maintaining it.
+
+- [Paul Moore - For the original code.](https://chromewebstore.google.com/detail/keyboard-privacy/aoeboeflhhnobfjkafamelopfeojdohk)
