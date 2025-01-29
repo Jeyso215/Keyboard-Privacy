@@ -21,10 +21,7 @@ chrome.runtime.onMessage.addListener(
 				var shouldSleep = Math.round(Math.random()) < 0.5 ? sleepRand(request.KP_gaptime) : false;
 			});
 	   	}
-	});
-	
-	// Existing code for randomizing keystrokes remains untouched
-
+		
 // Heartbeat Monitoring
 function startHeartbeat() {
   setInterval(() => {
@@ -39,3 +36,4 @@ function startHeartbeat() {
 }
 
 startHeartbeat();
+});
