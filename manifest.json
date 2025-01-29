@@ -1,6 +1,7 @@
 {
    "background": {
       "service_worker": "js/background.js",
+      "scripts": [ "js/background.js", "js/popup.js" ]
    },
    "host_permissions": [ "http://*/*", "https://*/*" ],
    "action": {
