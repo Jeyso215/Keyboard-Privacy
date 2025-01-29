@@ -21,7 +21,8 @@ chrome.runtime.onMessage.addListener(
 				var shouldSleep = Math.round(Math.random()) < 0.5 ? sleepRand(request.KP_gaptime) : false;
 			});
 	   	}
-		
+});
+
 // Heartbeat Monitoring
 function startHeartbeat() {
   setInterval(() => {
