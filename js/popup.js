@@ -34,7 +34,7 @@ var setDisabledPrivacy = function() {
 	$("#togglePrivacy").addClass("aos-button-ok");
 	$("#togglePrivacy").removeClass("aos-button-error");
 	$("#togglePrivacy").text("enable");
-	chrome.browserAction.setIcon({path: 'icons/icon.png'});
+	chrome.action.setIcon({path: 'icons/icon_safe.png'});
 }
 
 var setEnabledPrivacy = function() {
@@ -48,7 +48,7 @@ var setEnabledPrivacy = function() {
 	$("#togglePrivacy").addClass("aos-button-error");
 	$("#togglePrivacy").removeClass("aos-button-ok");
 	$("#togglePrivacy").text("disable");
-	chrome.browserAction.setIcon({path: 'icons/icon_safe.png'});
+	chrome.action.setIcon({path: 'icons/icon_safe.png'});
 }
 
 var togglePrivacy = function() {
