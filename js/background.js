@@ -22,7 +22,7 @@ chrome.tabs.onActivated.addListener(function (event) {
             chrome.storage.sync.get("KP__" + tab.url.split("/")[2], function(items){
                 if(items["KP__" + tab.url.split("/")[2]]) {
                     // This site is whitelisted - run KP
-                    chrome.action.setIcon({path: 'icons/icon.png'});
+                    chrome.action.setIcon({path: 'icons/icon_safe.png'});
                 }
                 else {                    
                     // This site is not whitelisted - do nothing.
@@ -41,7 +41,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
             chrome.storage.sync.get("KP__" + tab.url.split("/")[2], function(items){
                 if(items["KP__" + tab.url.split("/")[2]]) {
                     // This site is whitelisted - run KP
-                    chrome.action.setIcon({path: 'icons/icon.png'});
+                    chrome.action.setIcon({path: 'icons/icon_safe.png'});
                 }
                 else {                    
                     // This site is not whitelisted - do nothing.
