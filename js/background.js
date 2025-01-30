@@ -4,8 +4,8 @@ var KP_gaptime;
 var getSettings = function() {
     // Grab KP settings
     chrome.storage.sync.get(function(settings){
-        if(!settings.KP_dwelltime){settings.KP_dwelltime = 200;}
-        if(!settings.KP_gaptime){settings.KP_gaptime = 200;}
+        if(!settings.KP_dwelltime){settings.KP_dwelltime = 100;}
+        if(!settings.KP_gaptime){settings.KP_gaptime = 100;}
         KP_dwelltime = settings.KP_dwelltime;
         KP_gaptime = settings.KP_gaptime;
         chrome.storage.sync.set(settings, function() {
