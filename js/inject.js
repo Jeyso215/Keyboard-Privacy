@@ -37,4 +37,3 @@ function startHeartbeat() {
 }
 
 startHeartbeat();
-});
