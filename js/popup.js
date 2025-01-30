@@ -34,7 +34,7 @@ var setDisabledPrivacy = function() {
 	$("#togglePrivacy").addClass("aos-button-ok");
 	$("#togglePrivacy").removeClass("aos-button-error");
 	$("#togglePrivacy").text("enable");
-	chrome.action.setIcon({path: 'icons/icon_safe.png'});
+	chrome.action.setIcon({path: 'icons/icon.png'});
 }
 
 var setEnabledPrivacy = function() {
