@@ -22,11 +22,11 @@ chrome.tabs.onActivated.addListener(function (event) {
             chrome.storage.sync.get("KP__" + tab.url.split("/")[2], function(items){
                 if(items["KP__" + tab.url.split("/")[2]]) {
                     // This site is whitelisted - run KP
-                    chrome.action.setIcon({path: 'icons/icon_safe.png'});
+                    chrome.action.setIcon({path: 'icons/icon.png'});
                 }
                 else {                    
                     // This site is not whitelisted - do nothing.
-                    chrome.action.setIcon({path: 'icons/icon_safe.png'});
+                    chrome.action.setIcon({path: 'icons/icon.png'});
                 }
             });
     });
@@ -41,11 +41,11 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
             chrome.storage.sync.get("KP__" + tab.url.split("/")[2], function(items){
                 if(items["KP__" + tab.url.split("/")[2]]) {
                     // This site is whitelisted - run KP
-                    chrome.action.setIcon({path: 'icons/icon_safe.png'});
+                    chrome.action.setIcon({path: 'icons/icon.png'});
                 }
                 else {                    
                     // This site is not whitelisted - do nothing.
-                chrome.action.setIcon({path: 'icons/icon_safe.png'});
+                chrome.action.setIcon({path: 'icons/icon.png'});
                     chrome.tabs.sendMessage(tabId, {name: "enablePrivacyMode","KP_dwelltime":KP_dwelltime, "KP_gaptime":KP_gaptime}, function(response) {
                         // We don't need a callback here just yet, but the next version will.
                     });
