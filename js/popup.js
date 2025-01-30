@@ -66,9 +66,9 @@ var togglePrivacy = function() {
 $("#togglePrivacy").on("click", function(e) {
 	e.preventDefault();
 	togglePrivacy();
-	chrome.tabs.getSelected(null, function(tab) {
-    	chrome.tabs.reload(tab.id);
-    	setTimeout(function() {window.close();}, 1000);
+	chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+		chrome.tabs.reload(tabs[0].id);
+		setTimeout(function() { window.close(); }, 1000);
 	});
 });
 
