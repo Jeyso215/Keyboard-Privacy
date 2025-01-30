@@ -23,8 +23,9 @@ function setupKeystrokeDelays(dwelltime, gaptime) {
 
   $(inputs).on('keyup', (e) => {
     if (Math.random() < 0.5) sleepRand(gaptime);
+ }
   });
-}
+});
 
 // Heartbeat Monitoring
 function startHeartbeat() {
