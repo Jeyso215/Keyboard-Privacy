@@ -4,24 +4,27 @@ function sleepRand(time) {
  	while(new Date().getTime() < end){ /* do nothing */ }
 }
 
-chrome.runtime.onMessage.addListener(
-	function(request, sender, sendResponse) {
-	    if (request.name == "enablePrivacyMode")
-	    {
-	    	sendResponse({"message":"ok"});
-	    	$(":input:text").keydown(function(e) {
-				var shouldSleep = Math.round(Math.random()) < 0.5 ? sleepRand(request.KP_dwelltime) : false;
-			});
-
-			$(":input:text").keyup(function(e) {
-				var shouldSleep = Math.round(Math.random()) < 0.5 ? sleepRand(request.KP_gaptime) : false;
-			});
-
-			$('input[type=text], textarea').keyup(function(e) {
-				var shouldSleep = Math.round(Math.random()) < 0.5 ? sleepRand(request.KP_gaptime) : false;
-			});
-	   	}
+chrome.storage.sync.get(['KP_dwelltime', 'KP_gaptime'], (settings) => {
+  const currentURL = window.location.hostname;
+  
+  chrome.storage.sync.get(`KP__${currentURL}`, (result) => {
+    if (!result[`KP__${currentURL}`]) {
+      setupKeystrokeDelays(settings.KP_dwelltime || 100, settings.KP_gaptime || 100);
+    }
+  });
 });
+
+function setupKeystrokeDelays(dwelltime, gaptime) {
+  const inputs = "input[type='text'], textarea";
+
+  $(inputs).on('keydown', (e) => {
+    if (Math.random() < 0.5) sleepRand(dwelltime);
+  });
+
+  $(inputs).on('keyup', (e) => {
+    if (Math.random() < 0.5) sleepRand(gaptime);
+  });
+}
 
 // Heartbeat Monitoring
 function startHeartbeat() {
