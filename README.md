@@ -8,20 +8,14 @@ Keyboard Privacy is a web project focused on enhancing user privacy by obfuscati
 - **Easy Integration**: Simple to integrate into existing web projects.
 - **Customizable Settings**: Allows customization of dwell time and gap time for keystrokes.
 
-## Language Composition
-
-- **CSS**: 62.1%
-- **JavaScript**: 30.2%
-- **HTML**: 7.7%
-
-## Installing as a Developer
+## Installing
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Jeyso215/Keyboard-Privacy.git
 ```
 
-1. Open Google Chrome and navigate to ```chrome://extensions/```.
+1. Open Brave and navigate to ```brave://extensions/```.
 
 2. Enable ```"Developer mode"``` by toggling the switch in the top right corner.
 
@@ -54,10 +48,6 @@ To contribute:
 ## License
 
 This project is licensed under the GNU Affero General Public License v3.0. See the [LICENSE](LICENSE.md) file for details.
-
-## Contact
-
-For any questions or inquiries, please contact the repository owner at [Jeyso215](https://github.com/Jeyso215)
 
 ## Credits
 
