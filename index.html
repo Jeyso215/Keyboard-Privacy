@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="text" id="testInput" placeholder="Type here...">
+  <script>
+    let timestamps = [];
+    document.getElementById('testInput').addEventListener('keydown', (e) => {
+      timestamps.push({ key: e.key, time: e.timeStamp });
+    });
+    
+    // Export data for analysis
+    function exportData() {
+      console.log(JSON.stringify(timestamps, null, 2));
+    }
+  </script>
+  <button onclick="exportData()">Export Keystroke Data</button>
+</body>
+</html>
